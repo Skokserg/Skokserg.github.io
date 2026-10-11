@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PersonalCloudMigration Privacy Policy: how a personal rclone migration uses and protects Google Drive files and credentials.">
+  <title>Privacy Policy | PersonalCloudMigration</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-head"><div class="wrap nav"><a class="brand" href="/">PersonalCloudMigration</a><nav aria-label="Main navigation"><a href="/">Home</a><a aria-current="page" href="/privacy.html">Privacy policy</a><a href="/terms.html">Terms</a></nav></div></header>
+  <main class="wrap legal">
+    <p class="eyebrow">PRIVACY POLICY</p>
+    <h1>Privacy and data handling</h1>
+    <p class="muted">Effective: October 11, 2026</p>
+    <p>PersonalCloudMigration is a non-commercial, private workflow that uses rclone to copy files from a personal Yandex Disk account into a personal Google Drive account. The operator and user are the account owner. The workflow runs on a privately administered virtual private server (VPS). This public GitHub Pages website only explains the utility and does not request Google sign-in or process your files.</p>
+
+    <h2>1. Google user data accessed</h2>
+    <p>With authorization, the utility may access Google Drive folder metadata, file names, identifiers, sizes, timestamps, checksums when available, and file contents for verification. It creates destination folders and files and checks existing copies to avoid redundant transfers. The Google Drive scope <code>https://www.googleapis.com/auth/drive</code> may be requested because the utility must access an existing archive created under a different OAuth client, not just files created by the current client.</p>
+
+    <h2>2. Purposes and limited use</h2>
+    <p>Google user data is used solely to copy the account owner's data into Google Drive, resume interrupted migration, identify transfer errors and verify transferred content. The workflow is not designed to delete files from the source or to use Drive content for advertising, marketing, credit decisions, profiling, training AI models or any unrelated purpose.</p>
+
+    <h2>3. Processing and storage</h2>
+    <p>Files are transmitted between the cloud providers through the private VPS using encrypted network connections. The workflow does not intentionally create a permanent second archive of file contents on that VPS. Transient buffers are used for transfer. Migration logs may retain file paths, sizes, timing, statuses and error messages to diagnose failures. Copied files remain in the owner's Google Drive under the owner's control.</p>
+    <p>OAuth access and refresh tokens and other connection credentials are retained in restricted-access configuration files on the VPS for as long as needed to operate or troubleshoot the migration. The account owner may revoke Google authorization in Google Account settings and delete the local credential configuration. Migration logs and temporary information may be removed by the account owner when no longer needed.</p>
+
+    <h2>4. Sharing and disclosure</h2>
+    <p>Google user data is not sold, shared with advertisers or disclosed to other users. Data is transmitted to Google Drive as the selected destination, while Yandex Disk acts as the source. The VPS infrastructure is used as a technical transit environment. The informational website itself does not receive OAuth tokens or access to Drive files.</p>
+
+    <h2>5. Security</h2>
+    <p>Cloud connections use HTTPS/TLS; server configuration files holding credentials are restricted to privileged access. The server is managed privately and is not accessible to the public through the migration interface. No security measure can guarantee absolute protection.</p>
+
+    <h2>6. User choice, retention and deletion</h2>
+    <p>The account owner can pause or stop the transfer, revoke OAuth consent, remove credentials and logs from the VPS, and manage copied files in Google Drive. Source files in Yandex Disk remain unless the owner separately deletes them. The utility does not impose its own retention period on the owner's Google Drive files.</p>
+
+    <h2>7. This informational website</h2>
+    <p>This site is statically hosted by GitHub Pages. It has no forms, advertising pixels or application analytics scripts. GitHub may process ordinary web requests according to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub's own privacy practices</a>. The site does not embed Google login or receive user files.</p>
+
+    <h2>8. Changes and contact</h2>
+    <p>This policy will be updated if the utility's data practices materially change. Questions or requests can be raised through the project's <a href="https://github.com/Skokserg/Skokserg.github.io/issues">GitHub issue tracker</a>; do not include passwords or private file contents in public issues.</p>
+
+    <div class="legal-bottom"><a href="/">← Back to the application home page</a></div>
+  </main>
+  <footer class="footer"><div class="wrap footer-row"><span>© 2026 PersonalCloudMigration</span><span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span></div></footer>
+</body>
+</html>

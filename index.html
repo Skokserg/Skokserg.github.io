@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PersonalCloudMigration is a private, self-hosted utility for transferring files from Yandex Disk to Google Drive with rclone.">
+  <title>PersonalCloudMigration | Private cloud file transfer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap nav">
+      <a class="brand" href="/">PersonalCloudMigration</a>
+      <nav aria-label="Main navigation">
+        <a aria-current="page" href="/">Home</a>
+        <a href="/privacy.html">Privacy policy</a>
+        <a href="/terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">PRIVATE UTILITY · NON-COMMERCIAL</div>
+      <h1>Personal cloud file migration</h1>
+      <p class="lead">A self-hosted workflow to copy personal files from Yandex Disk to Google Drive using the open-source <a href="https://rclone.org/" rel="noopener noreferrer">rclone</a> tool.</p>
+      <p>The utility runs on a privately administered server. This website provides information about the utility and its data practices. It does not provide public account registration, sign-in, or file-upload features.</p>
+      <div class="actions"><a class="primary" href="/privacy.html">Read privacy policy</a><a class="secondary" href="/terms.html">Read terms</a></div>
+    </section>
+
+    <section aria-labelledby="workflow-title" class="section">
+      <h2 id="workflow-title">How it works</h2>
+      <div class="cards">
+        <article class="panel"><div class="number">01</div><h3>Authorize accounts</h3><p>The account owner authorizes access to their Yandex Disk and Google Drive accounts through the providers' supported authentication methods.</p></article>
+        <article class="panel"><div class="number">02</div><h3>Copy files</h3><p>The utility transfers files through an owner-managed virtual private server over encrypted connections, preserving the destination folder structure.</p></article>
+        <article class="panel"><div class="number">03</div><h3>Verify the copy</h3><p>File names, sizes and available checksums are used to assess transfer success. Source files are not intentionally deleted by the migration workflow.</p></article>
+      </div>
+    </section>
+
+    <section class="section two-up">
+      <article class="panel">
+        <h2>Why Google Drive access is requested</h2>
+        <p>The utility needs to create and inspect files in the destination Drive. Full Google Drive access may be requested so a new OAuth client can see files created earlier by a different OAuth client. This is broader permission than the everyday copy operation requires.</p>
+        <p>The permission is used for migration and integrity checks, not to operate a public file-sharing service.</p>
+      </article>
+      <article class="panel">
+        <h2>Data handling</h2>
+        <p>Authentication tokens are held on the private server, not on this website. File contents pass through the server during transfer; operational logs can contain file paths, transfer sizes, statuses and errors.</p>
+        <p>There is no advertising, tracking script or sale of user data associated with this site or migration utility.</p>
+      </article>
+    </section>
+
+    <section class="section narrow">
+      <h2>Personal use only</h2>
+      <p>This utility is maintained for the owner's own cloud accounts; it is not offered to other users as a hosted service. The account owner controls the migration server, target Drive folder, OAuth permissions and credential revocation.</p>
+      <p>For information about access, use, storage, and deletion of Google user data, see the <a href="/privacy.html">Privacy Policy</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <span>© 2026 PersonalCloudMigration · Personal utility</span>
+      <span><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="https://github.com/Skokserg/Skokserg.github.io/issues">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>
